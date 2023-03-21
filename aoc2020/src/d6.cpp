@@ -17,7 +17,7 @@ struct Group
 	inline unsigned int GetYes() const {
 		return static_cast<unsigned int> (mYes);
 	};
-	
+
 private:
 	void ProcessData(std::span<std::string> aData);
 	int mYes{};
@@ -68,7 +68,7 @@ std::vector<Group> ReadInput()
 #ifndef TEST_CASE
 	std::ifstream input("input/d6.txt");
 #endif
-	
+
 	std::vector<Group> groups;
 	std::string line;
 	std::vector<std::string> data;
